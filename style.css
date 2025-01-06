@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    background: white;
+    min-height:100vh;
+   
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:0%;
+    padding:50px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index:100;
+
+}
+.logo{
+    font-size: 2em;
+    color:aquamarine;
+    pointer-events:none;
+    margin-right:270px;
+}
+.navigation a{
+   text-decoration: none;
+   color:aquamarine;
+   padding:6px 15px;
+   border-radius: 20px;
+   margin: 0px 10px;
+   font-weight:600;
+}
+.navigation a:hover{
+    background: black;
+    animation: fadeIn 0.4s ease-in-out; /* Applying the animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0); /* Corrected scale property */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Corrected scale property */
+    }
+}
+.navigation a.active{
+    background: red;
+    animation: fadeIn 0.4s ease-in-out; /* Applying the animation */
+    color:black;
+}
+.parallax{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+}
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: rgb(255, 255, 255); /* Semicolon added here */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    pointer-events:none;
+
+}
+.sec{
+    position: relative;
+    background: #003329;
+    padding:100px;
+}
